@@ -1,0 +1,118 @@
+:root {
+    --blue: rgb(38, 145, 217);
+    --white: rgb(255, 255, 255);
+    --bgr1: rgb(110, 128, 255);
+    --bgr2: rgb(210, 128, 255);
+    --form-navbar: rgb(0, 0, 0, 0.4);
+    --navbar-background: rgb(255, 255, 255, 0.4);
+    --form-body: rgb(0, 0, 0, 0.6);
+    --form-shadow: rgba(0, 0, 0, 0.3);
+    --navbar-height: 36px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: var(--white);
+}
+
+body {
+    background: linear-gradient(45deg, var(--bgr1), var(--bgr2));
+    height: 100vh;
+}
+
+.root,
+.container {
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    padding: 10px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-shadow: 0px 10px 20px var(--form-shadow);
+}
+
+.form-navbar {
+    width: 100%;
+    height: var(--navbar-height);
+    background: var(--form-navbar);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.form-body {
+    width: 100%;
+    height: 100%;
+    background: var(--form-body);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.form-navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-left {
+    width: 300px;
+}
+
+.navbar-right {
+    width: 120px;
+}
+
+.navbar-left,
+.background {
+    background-color: var(--navbar-background);
+    margin: 6px;
+    border-radius: 4px;
+}
+
+.navbar-right,
+.background {
+    background-color: var(--navbar-background);
+    margin: 6px;
+    border-radius: 4px;
+}
+
+.account-input {
+    position: relative;
+    margin: 30px 0;
+    display: flex;
+}
+
+.icon {
+    /* set color of icon */
+    color: #d9d9d9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.account-input .info {
+    position: relative;
+}
+
+.account-input input {
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: hsla(0, 0%, 100%, 0.336);
+    outline: none;
+}
+
+.account-input label {
+    position: absolute;
+    left: 5px;
+    pointer-events: none;
+}

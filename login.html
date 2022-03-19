@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
     <link rel="stylesheet" type="text/css" href="login.css">
     <!-- <script defer type="text/javascript" src="js/index.js"></script> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0">
     <!-- <link rel="shortcut icon" href="img/Logo-256px.ico" type="image/x-icon"> -->
     <title>Whisp Login</title>
 </head>
@@ -20,62 +20,69 @@
             <div class="form">
                 <div class="form-navbar">
                     <div class="navbar-left">
-                        <div id="background">
-                            <div id="icon"></div>
-                            <div id="title"></div>
+                        <div class="background">
+                            <div class="icon"></div>
+                            <div class="title">
+                                <label>Whisp Login</label>
+                            </div>
                         </div>
                     </div>
                     <div class="navbar-right">
-                        <div id="background">
-                            <div id="minimize"></div>
-                            <div id="maximize"></div>
-                            <div id="close"></div>
+                        <div class="background">
+                            <div class="minimize"></div>
+                            <div class="maximize"></div>
+                            <div class="close"></div>
                         </div>
                     </div>
                 </div>
 
                 <div class="form-body">
-                    <div class="logo-and-title">
-                        <div id="logo"></div>
-                        <div id="title"></div>
-                    </div>
-
-                    <div class="account-input">
-                        <div id="icon">
-                            <i class="fas fa-user"></i>
+                    <form action="index.php" method="post" autocomplete="off">
+                        <div class="logo-and-title">
+                            <div class="logo"></div>
+                            <div class="title">
+                                <p>Whisp Login</p>
+                            </div>
                         </div>
-                        <div class="info">
-                            <input class="input" name="username" type="text" required>
-                            <label>Enter Username Here</label>
+
+                        <div class="account-input">
+                            <div class="icon">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="info">
+                                <input class="input" name="username" type="text" required>
+                                <label>Enter Username Here</label>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="account-input">
-                        <div id="icon">
-                            <i class="fas fa-key"></i>
+                        <div class="account-input">
+                            <div class="icon">
+                                <i class="fas fa-key"></i>
+                            </div>
+                            <div class="info">
+                                <input class="input" name="password" type="text" required>
+                                <label>Enter Password</label>
+                            </div>
                         </div>
-                        <div class="info">
-                            <input class="input" name="password" type="text" required>
-                            <label>Enter Password</label>
+
+                        <div class="rememberme">
+                            <p>Remember me?</p>
+                            <label class="toggle">
+                                <input class="toggle__input" type="checkbox" checked>
+                                <div class="toggle__fill"></div>
+                            </label>
                         </div>
-                    </div>
 
-                    <div class="rememberme">
-                        <label>Remember me?</label>
-                        <div class="toggle"></div>
-                    </div>
+                        <input type="submit" value="LOG IN">
 
-                    <div class="login_btn">
-                        <label>LOG IN</label>
-                    </div>
+                        <div class="forgotpass">
+                            <label>Forgot Password?</label>
+                        </div>
 
-                    <div class="forgotpass">
-                        <label>Forgot Password?</label>
-                    </div>
-
-                    <div class="signup">
-                        <label>New User? Sign Up</label>
-                    </div>
+                        <div class="signup">
+                            <label>New User? Sign Up</label>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>

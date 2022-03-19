@@ -3,15 +3,17 @@
     --white: rgb(255, 255, 255);
     --bgr1: rgb(110, 128, 255);
     --bgr2: rgb(210, 128, 255);
-    --form-navbar: rgb(0, 0, 0, 0.4);
-    --navbar-background: rgb(255, 255, 255, 0.4);
-    --form-body: rgb(0, 0, 0, 0.6);
+    --form-navbar: rgb(0, 0, 0, 0.7);
+    --navbar-background: rgb(255, 255, 255, 0.16);
+    --form-body: rgb(0, 0, 0, 0.8);
     --form-shadow: rgba(0, 0, 0, 0.3);
     --navbar-height: 36px;
+    --form-input: rgb(255, 255, 255, 0.2);
     --text_alpha1: rgb(255, 255, 255, 0.8);
     --text_alpha2: rgb(255, 255, 255, 0.6);
+    --text_alpha3: rgb(255, 255, 255, 0.4);
     --toggle_on: rgba(31, 244, 255, 0.8);
-    --btn_left: rgba(36, 187, 236, 0.8);
+    --btn_left: rgba(31, 244, 255, 0.8);
     --btn_right: rgba(36, 127, 236, 0.8);
 }
 
@@ -92,39 +94,70 @@ body {
 }
 
 .navbar-left {
-    width: 300px;
+    display: flex;
+    width: 100%;
+    background-color: var(--navbar-background);
+    margin: 6px;
+    border-radius: 4px;
+    align-items: center;
+}
+
+.navbar-left .icon {
+    margin: 0 3px;
+    width: 20px;
+    height: 20px;
+    background: url("logo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .navbar-right {
-    width: 120px;
-}
-
-.navbar-left,
-.background {
+    width: 110px;
+    display: flex;
     background-color: var(--navbar-background);
     margin: 6px;
     border-radius: 4px;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
-.navbar-right,
-.background {
-    background-color: var(--navbar-background);
-    margin: 6px;
-    border-radius: 4px;
+.navbar-right .minimize {
+    width: 24px;
+    height: 24px;
+    background: url("minimize.ico");
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: rotate(-90deg);
+}
+
+.navbar-right .maximize {
+    width: 24px;
+    height: 24px;
+    background: url("maximize.ico");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.navbar-right .close {
+    width: 24px;
+    height: 24px;
+    background: url("close.ico");
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .account-input {
-    position: relative;
     margin-top: 30px;
     display: flex;
+    background-color: var(--form-input);
+    width: 100%;
+    border-radius: 3px;
+    align-items: center;
 }
 
-.icon {
-    /* set color of icon */
-    color: #d9d9d9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.account-input i {
+    margin: 0 10px;
+    text-align: center;
 }
 
 .account-input .info {
@@ -137,13 +170,15 @@ body {
     height: 40px;
     font-size: 16px;
     border: none;
-    background: hsla(0, 0%, 100%, 0.336);
+    background: none;
     outline: none;
 }
 
 .account-input label {
+    color: var(--text_alpha2);
     position: absolute;
-    left: 5px;
+    left: 0px;
+    top: 8px;
     pointer-events: none;
 }
 
@@ -168,7 +203,7 @@ input[type="submit"]:hover {
 
 .rememberme {
     display: flex;
-    margin: 30px 20px 14px;
+    margin: 25px 20px 14px;
 }
 
 .rememberme p {
@@ -216,4 +251,20 @@ input[type="submit"]:hover {
 
 .toggle__input:checked~.toggle__fill::after {
     transform: translateX(var(--height));
+}
+
+.forgotpass p {
+    margin: 20px 0 5px;
+    text-align: center;
+    color: var(--text_alpha3);
+}
+
+.signup {
+    text-align: center;
+    color: var(--text_alpha2);
+}
+
+.signup a {
+    color: var(--white);
+    text-decoration: none;
 }

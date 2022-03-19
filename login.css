@@ -26,7 +26,7 @@
 }
 
 body {
-    background: linear-gradient(45deg, var(--bgr1), var(--bgr2));
+    background: url("background.png");
     height: 100vh;
 }
 
@@ -64,7 +64,6 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
-    box-shadow: 0px 10px 20px var(--form-shadow);
 }
 
 .form-navbar {
@@ -81,6 +80,7 @@ body {
     background: var(--form-body);
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
+    /* box-shadow: 0px 10px 20px var(--form-shadow); */
 }
 
 .form-body form {
@@ -180,6 +180,14 @@ body {
     left: 0px;
     top: 8px;
     pointer-events: none;
+    transition: transform 0.4s cubic-bezier(0.33, 1, 0.68, 1), font-size 0.2s cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+.account-input input:focus~label,
+.account-input input:valid~label {
+    /* Text transition */
+    transform: translate(-20px, -28px);
+    font-size: 14px;
 }
 
 input[type="submit"] {

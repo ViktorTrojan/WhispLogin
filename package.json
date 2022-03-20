@@ -1,0 +1,24 @@
+{
+    "name": "titlebar",
+    "version": "1.0.0",
+    "description": "TitleBar app made with electron.js",
+    "main": "src/Main.js",
+    "scripts": {
+        "start": "electron .",
+        "pack": "electron-builder --dir",
+        "dist": "electron-builder"
+    },
+    "author": "RequestFX",
+    "license": "ISC",
+    "devDependencies": {
+        "electron": "^15.3.1",
+        "electron-builder": "^22.13.1"
+    },
+    "build": {
+        "appId": "your.id",
+        "mac": {
+            "category": "your.app.category.type"
+        }
+    },
+    "postinstall": "electron-builder install-app-deps"
+}

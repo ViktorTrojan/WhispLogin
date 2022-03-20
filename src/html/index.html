@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <!-- <script defer type="text/javascript" src="js/index.js"></script> -->
+    <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0">
+    <!-- <link rel="shortcut icon" href="img/Logo-256px.ico" type="image/x-icon"> -->
+    <title>Whisp Login</title>
+</head>
+
+<body>
+
+    <div class="root">
+        <div class="container">
+            <div class="form">
+                <div class="form-navbar">
+                    <div class="navbar-left">
+                        <div class="icon"></div>
+                        <div class="title">
+                            <label>Whisp Login</label>
+                        </div>
+                    </div>
+                    <div class="navbar-right">
+                        <div class="minimize"></div>
+                        <div class="maximize"></div>
+                        <div class="close"></div>
+                    </div>
+                </div>
+
+                <div class="form-body">
+                    <form action="index.php" method="post" autocomplete="off">
+                        <div class="logo-and-title">
+                            <div class="logo"></div>
+                            <div class="title">
+                                <p>Whisp Login</p>
+                            </div>
+                        </div>
+
+                        <div class="account-input">
+                            <i class="fas fa-user"></i>
+                            <div class="info">
+                                <input class="input" name="username" type="text" required>
+                                <label>Enter Username Here</label>
+                            </div>
+                        </div>
+
+                        <div class="account-input">
+                            <i class="fas fa-key"></i>
+                            <div class="info">
+                                <input class="input" name="password" type="password" required>
+                                <label>Enter Password</label>
+                            </div>
+                        </div>
+
+                        <div class="rememberme">
+                            <p>Remember me?</p>
+                            <label class="toggle">
+                                <input class="toggle__input" type="checkbox" checked>
+                                <div class="toggle__fill"></div>
+                            </label>
+                        </div>
+
+                        <input type="submit" value="LOG IN">
+
+                        <div class="forgotpass">
+                            <p>Forgot Password?</p>
+                        </div>
+
+                        <div class="signup">
+                            New User?
+                            <a href="register.html">Sign Up</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
